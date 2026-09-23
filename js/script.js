@@ -24,11 +24,13 @@ function tjekRabat(brand, price) {
     if( (brand === `Volkswagen` || brand === `Skoda`) && (price < 300000) )
     {
         finalPrice = finalPrice - 20000;
+        console.log(`${brand} er omfattet af kampagnen. Ny pris: ${finalPrice} kr.`);
+        
     }
-
+    else{ 
+        console.log(`${brand} er ikke omfattet af kampagnen. Pris: ${finalPrice} kr.`)
+}
     
-
-
 }
 
 tjekRabat(`Volkswagen`, 250000);
